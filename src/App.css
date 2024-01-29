@@ -1,0 +1,18 @@
+:root {
+  --z-index-mousecursor: 500;
+
+  --color-background: #0f172b;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+@keyframes hue-rotate {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
