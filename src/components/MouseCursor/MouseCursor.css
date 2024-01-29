@@ -1,0 +1,27 @@
+#mouse-cursor {
+  --color-white: white;
+
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: var(--z-index-mousecursor);
+  mix-blend-mode: difference;
+}
+
+#mouse-cursor svg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  fill: var(--color-white);
+  stroke: var(--color-white);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+* {
+  cursor: none;
+}
