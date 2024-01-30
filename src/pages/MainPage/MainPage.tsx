@@ -1,7 +1,9 @@
+import Introduce from '../../components/Main/Introduce/Introduce';
+
 const MainPage = () => {
   return (
     <div>
-      <h1>Main Page</h1>
+      <Introduce />
     </div>
   );
 };

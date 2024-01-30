@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import MouseCursor from './components/MouseCursor/MouseCursor';
+import './global.css';
 import './App.css';
 
 function App() {

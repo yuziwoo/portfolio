@@ -1,8 +1,11 @@
 const MainPageSkeleton = () => {
   return (
-    <div>
-      <h1>WELCOME</h1>
-    </div>
+    <div
+      style={{
+        minHeight: '100vh',
+        background: 'var(--color-background)',
+      }}
+    ></div>
   );
 };
 

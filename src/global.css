@@ -6,7 +6,7 @@
   --font-family-default: 'Inter', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
     'sans-serif';
   --font-weight-default: 400;
-  --lineHeight-default: 1.4;
+  --lineHeight-default: 1.8;
   --lineHeight-1: 1;
   --lineHeight-2: 1.2;
 }
@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: inherit;
   user-select: none;
   flex-shrink: 0;
   -webkit-user-drag: none;
