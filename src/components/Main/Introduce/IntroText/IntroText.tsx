@@ -51,6 +51,7 @@ const IntroText = () => {
         drag
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
         dragTransition={{ bounceStiffness: 500, bounceDamping: 20 }}
+        viewport={{ once: true }}
       >
         <motion.h1
           variants={HeadingVariants}
