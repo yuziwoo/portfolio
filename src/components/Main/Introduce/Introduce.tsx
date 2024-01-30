@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import IntroText from './IntroText/IntroText';
+import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
 
 const MainSection = styled.section`
   width: calc(100% - 10rem);
-  max-width: 1720px;
   margin: auto;
   position: relative;
   display: flex;
@@ -14,14 +14,15 @@ const MainSection = styled.section`
 
 const BannerWrapper = styled.article`
   width: 50%;
-  max-width: 860px;
 `;
 
 const Introduce = () => {
   return (
     <MainSection className="main-section intro">
       <IntroText />
-      <BannerWrapper></BannerWrapper>
+      <BannerWrapper>
+        <IntroSwiperBanner />
+      </BannerWrapper>
     </MainSection>
   );
 };

@@ -1,25 +1,4 @@
-import { motion, Variants } from 'framer-motion';
-
-const lineVariants: Variants = {
-  off: {
-    scaleX: 0,
-  },
-  on: {
-    scaleX: 1,
-  },
-};
-
-const textVariants: Variants = {
-  off: {
-    opacity: 0,
-    y: 10,
-  },
-  on: {
-    opacity: 1,
-    y: 0,
-  },
-};
-
+import { motion } from 'framer-motion';
 interface TopLinedTextBoxProps {
   children: React.ReactNode;
   width: string;
@@ -39,9 +18,8 @@ const TopLinedTextBox = ({ children, width, color, dir, delay }: TopLinedTextBox
   return (
     <>
       <motion.div
-        variants={lineVariants}
-        initial="off"
-        whileInView="on"
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{
           delay: delay ? delay : 0,
@@ -51,9 +29,8 @@ const TopLinedTextBox = ({ children, width, color, dir, delay }: TopLinedTextBox
         style={style}
       ></motion.div>
       <motion.div
-        variants={textVariants}
-        initial="off"
-        whileInView="on"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{
           delay: delay ? delay + 0.3 : 0.3,

@@ -1,0 +1,155 @@
+.intro-swiper-banner {
+  width: 100%;
+  position: relative;
+}
+
+.intro-swiper-banner .swiper-slide {
+  overflow: hidden;
+}
+
+.intro-swiper-banner .swiper-slide img {
+  width: 100%;
+  display: block;
+  transform: scale(1);
+  transition: transform 10s linear;
+}
+
+.intro-swiper-banner .swiper-slide-next img {
+  transform: scale(1.2);
+  transition: transform 0s;
+}
+
+.intro-swiper-banner .layer {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
+.intro-swiper-banner .text-img {
+  top: 0;
+  height: 100%;
+}
+
+.intro-swiper-banner .parallax {
+  top: 3.7383%;
+}
+
+.intro-swiper-banner .decoration {
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.intro-swiper-banner .decoration .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1.041666vw;
+}
+
+.intro-swiper-banner .decoration .text .text-big {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 2.2vw;
+}
+
+.intro-swiper-banner .decoration .text .text-big h1 {
+  font-size: 6.25vw;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.intro-swiper-banner .decoration .text .text-big h1:nth-child(1) {
+  padding-right: 1.8vw;
+  line-height: 1;
+}
+
+.intro-swiper-banner .decoration .text .text-big h1:nth-child(2) {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  line-height: 0.8;
+}
+
+.intro-swiper-banner .decoration .text .text-big h1::after {
+  content: attr(data-name);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  width: 0%;
+  height: 100%;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+.intro-swiper-banner .decoration .text .text-big h1:nth-child(1)::after {
+  animation: intro-swiper-banner-text1 4s infinite;
+}
+
+.intro-swiper-banner .decoration .text .text-big h1:nth-child(2)::after {
+  width: 100%;
+  height: 105.105%;
+  animation: intro-swiper-banner-text2 4s infinite;
+}
+
+@keyframes intro-swiper-banner-text1 {
+  from {
+    width: 0%;
+    opacity: 1;
+  }
+  15% {
+    width: 100%;
+    opacity: 1;
+  }
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes intro-swiper-banner-text2 {
+  from {
+    height: 0%;
+    opacity: 1;
+  }
+  10% {
+    height: 0%;
+    opacity: 1;
+  }
+  30% {
+    height: 105.105%;
+    opacity: 1;
+  }
+  85% {
+    height: 105.105%;
+    opacity: 1;
+  }
+  100% {
+    height: 105.105%;
+    opacity: 0;
+  }
+}
+
+.intro-swiper-banner .decoration .text .text-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.intro-swiper-banner .decoration .text .text-small p {
+  font-size: 0.9vw;
+  line-height: 1.4;
+  font-weight: 700;
+  font-style: italic;
+}

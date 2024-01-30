@@ -1,0 +1,141 @@
+.text-parallax {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-parallax p {
+  position: absolute;
+  text-wrap: nowrap;
+  width: auto;
+  left: 0;
+  top: 0;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+.text-parallax p:nth-child(1) {
+  position: relative;
+  opacity: 0;
+}
+
+.text-parallax p:nth-child(2) {
+  animation-name: text-parallax-1;
+}
+
+.text-parallax p:nth-child(3) {
+  animation-name: text-parallax-2;
+}
+
+.text-parallax p:nth-child(4) {
+  animation-name: text-parallax-3;
+}
+
+.text-parallax p:nth-child(5) {
+  animation-name: text-parallax-4;
+}
+
+@keyframes text-parallax-1 {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes text-parallax-2 {
+  from {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  55% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes text-parallax-3 {
+  from {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  80% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  85% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes text-parallax-4 {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  45% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
