@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { STYLE } from '../../../../constants/style';
 
 const Banner = styled.section`
+  --size-heading: 6.25vw;
+
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -22,6 +24,18 @@ const Banner = styled.section`
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 0 6.4% 4.66%;
+  }
+
+  @media screen and (max-width: 1040px) {
+    & {
+      --size-heading: 11vw;
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    & {
+      --size-heading: 13.95348837vw;
+    }
   }
 `;
 
@@ -82,7 +96,7 @@ const IntroAppleBanner = () => {
             style={{
               color: 'var(--color-red)',
               writingMode: 'vertical-lr',
-              fontSize: '6.25vw',
+              fontSize: 'var(--size-heading)',
               fontStyle: 'italic',
               lineHeight: '1.2',
               fontWeight: '700',

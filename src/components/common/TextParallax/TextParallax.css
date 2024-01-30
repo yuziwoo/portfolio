@@ -7,7 +7,7 @@
 .text-parallax p {
   position: absolute;
   text-wrap: nowrap;
-  width: auto;
+  width: max-content;
   left: 0;
   top: 0;
   animation-timing-function: linear;

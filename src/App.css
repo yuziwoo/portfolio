@@ -21,6 +21,25 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  :root {
+    --font-size-2: 1.4rem;
+    --heading-size-5: 3.8rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  :root {
+    --font-size-2: 1.3rem;
+    --heading-size-5: 3.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  :root {
+    --font-size-2: 1.2rem;
+    --heading-size-5: 2.8rem;
+  }
+}
+
 body {
   background-color: var(--color-background);
 }

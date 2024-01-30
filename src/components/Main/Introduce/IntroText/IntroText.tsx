@@ -1,14 +1,40 @@
-import { Variants, motion } from 'framer-motion';
 import styled from 'styled-components';
+import { Variants, motion } from 'framer-motion';
 import TopLinedTextBox from '../../../common/TopLinedTextBox/TopLinedTextBox';
 
 const TextBlock = styled.div`
   padding-top: 4rem;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 3.5rem;
+  }
+  @media screen and (max-width: 380px) {
+    padding-top: 3rem;
+  }
 `;
 
 const Paragraph = styled.p`
   font-size: var(--font-size-2);
   padding-top: 1rem;
+`;
+
+const Article = styled.article`
+  padding-top: 4rem;
+  position: sticky;
+  top: 20rem;
+  left: 0;
+
+  @media screen and (max-width: 1140px) {
+    top: 12rem;
+  }
+  @media screen and (max-width: 1040px) {
+    position: relative;
+    top: 0;
+    padding-top: 6rem;
+  }
+  @media screen and (max-width: 860px) {
+    padding: 6rem 2.325581vw;
+  }
 `;
 
 const HeadingVariants: Variants = {
@@ -18,7 +44,7 @@ const HeadingVariants: Variants = {
 
 const IntroText = () => {
   return (
-    <article className="intro-text" style={{ paddingTop: '4rem' }}>
+    <Article>
       <motion.div
         whileTap={{ scale: 1.1 }}
         style={{ overflow: 'hidden' }}
@@ -29,7 +55,7 @@ const IntroText = () => {
         <motion.h1
           variants={HeadingVariants}
           initial="initial"
-          animate="animate"
+          whileInView="animate"
           whileHover="hover"
           transition={{
             duration: 0,
@@ -76,7 +102,7 @@ const IntroText = () => {
           </Paragraph>
         </TopLinedTextBox>
       </TextBlock>
-    </article>
+    </Article>
   );
 };
 

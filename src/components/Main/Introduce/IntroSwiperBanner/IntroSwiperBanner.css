@@ -1,4 +1,6 @@
 .intro-swiper-banner {
+  --size-parallax: 6.25vw;
+
   width: 100%;
   position: relative;
 }
@@ -152,4 +154,46 @@
   line-height: 1.4;
   font-weight: 700;
   font-style: italic;
+}
+
+@media screen and (max-width: 1040px) {
+  .intro-swiper-banner {
+    --size-parallax: 11vw;
+  }
+  .intro-swiper-banner .decoration .text {
+    padding: 2vw;
+  }
+  .intro-swiper-banner .decoration .text .text-big {
+    padding-bottom: 4.4vw;
+  }
+  .intro-swiper-banner .decoration .text .text-big h1 {
+    font-size: 11vw;
+  }
+  .intro-swiper-banner .decoration .text .text-big h1:nth-child(1) {
+    padding-right: 3.6vw;
+  }
+  .intro-swiper-banner .decoration .text .text-small p {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .intro-swiper-banner {
+    --size-parallax: 13.95348837vw;
+  }
+  .intro-swiper-banner .decoration .text {
+    padding: 2.32558vw;
+  }
+  .intro-swiper-banner .decoration .text .text-big {
+    padding-bottom: 5.52325vw;
+  }
+  .intro-swiper-banner .decoration .text .text-big h1 {
+    font-size: 13.95348837vw;
+  }
+  .intro-swiper-banner .decoration .text .text-big h1:nth-child(1) {
+    padding-right: 3.6vw;
+  }
+  .intro-swiper-banner .decoration .text .text-small p {
+    font-size: 1.86vw;
+  }
 }

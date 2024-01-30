@@ -44,7 +44,7 @@ const IntroSwiperBanner = () => {
         <TextParallax
           text="CODE. CREATE. CAPTIVATE. "
           textStyle={{
-            fontSize: '6.25vw',
+            fontSize: 'var(--size-parallax)',
             textWrap: 'nowrap',
             fontWeight: '700',
             fontStyle: 'italic',
