@@ -69,7 +69,7 @@ const IntroText = () => {
             <br />
             디자인에 어울리는 인터렉티브하고 동적인 효과를 사용하여
             <br />
-            웹사이트에 생동갑을 입힙니다.
+            웹사이트에 생동감을 입힙니다.
           </Paragraph>
         </TopLinedTextBox>
       </TextBlock>

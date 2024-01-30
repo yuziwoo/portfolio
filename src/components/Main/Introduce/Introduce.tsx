@@ -3,13 +3,15 @@ import IntroText from './IntroText/IntroText';
 import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
 
 const MainSection = styled.section`
-  width: calc(100% - 10rem);
+  width: 100%;
   margin: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 16rem;
+  padding: 16rem 10rem 0;
+  background-image: url('../img/section1/background.jpg');
+  background-size: cover;
 `;
 
 const BannerWrapper = styled.article`
