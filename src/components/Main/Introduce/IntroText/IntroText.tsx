@@ -12,28 +12,25 @@ const Paragraph = styled.p`
 `;
 
 const HeadingVariants: Variants = {
-  initial: { x: '-100%', backgroundImage: 'none' },
+  initial: { x: '-100%' },
   animate: { x: 0 },
-  hover: {
-    color: 'rgba(255, 255, 255, 0)',
-    backgroundImage: 'linear-gradient(138deg,#90C5F4 0,#90F4E5 33%, #BC88B4 66%, #B690F4 100%)',
-    backgroundClip: 'text',
-    WebkitBackgroundClip: 'text',
-    MozBackgroundClip: 'text',
-  },
-  tap: { scale: 0.9 },
 };
 
 const IntroText = () => {
   return (
     <article className="intro-text" style={{ paddingTop: '4rem' }}>
-      <div style={{ overflow: 'hidden' }}>
+      <motion.div
+        whileTap={{ scale: 1.1 }}
+        style={{ overflow: 'hidden' }}
+        drag
+        dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+        dragTransition={{ bounceStiffness: 500, bounceDamping: 20 }}
+      >
         <motion.h1
           variants={HeadingVariants}
           initial="initial"
           animate="animate"
           whileHover="hover"
-          whileTap="tap"
           transition={{
             duration: 0,
             ease: 'anticipate',
@@ -45,11 +42,17 @@ const IntroText = () => {
             fontWeight: 700,
             lineHeight: 1,
             animation: 'hue-rotate 1s infinite',
+            color: 'rgba(255, 255, 255, 0)',
+            backgroundImage:
+              'linear-gradient(138deg,#90C5F4 0,#90F4E5 33%, #BC88B4 66%, #B690F4 100%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            MozBackgroundClip: 'text',
           }}
         >
           CATCH YOUR EYES
         </motion.h1>
-      </div>
+      </motion.div>
       <TextBlock>
         <TopLinedTextBox width="10rem" color="var(--color-white)" dir="right" delay={0.5}>
           <Paragraph>
