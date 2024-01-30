@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import IntroText from './IntroText/IntroText';
 import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
+import IntroAppleBanner from './IntroAppleBanner/IntroAppleBanner';
 
 const MainSection = styled.section`
   width: 100%;
@@ -24,6 +25,7 @@ const Introduce = () => {
       <IntroText />
       <BannerWrapper>
         <IntroSwiperBanner />
+        <IntroAppleBanner />
       </BannerWrapper>
     </MainSection>
   );

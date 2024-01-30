@@ -20,6 +20,7 @@ const IntroSwiperBanner = () => {
       opacity: 1,
     },
   };
+  const smallText = ['EXTREME', 'EFFICIENCY', 'WEBSITES'];
 
   return (
     <section className="intro-swiper-banner">
@@ -58,33 +59,18 @@ const IntroSwiperBanner = () => {
             <h1 data-name="CHECK">CHECK</h1>
           </div>
           <div className="text-small">
-            <motion.p
-              variants={smallTextVariants}
-              initial="off"
-              whileInView="on"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, ease: 'backOut', delay: 0.2 }}
-            >
-              EXTREME
-            </motion.p>
-            <motion.p
-              variants={smallTextVariants}
-              initial="off"
-              whileInView="on"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, ease: 'backOut', delay: 0.28 }}
-            >
-              EFFICIENCY
-            </motion.p>
-            <motion.p
-              variants={smallTextVariants}
-              initial="off"
-              whileInView="on"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, ease: 'backOut', delay: 0.36 }}
-            >
-              WEBSITES
-            </motion.p>
+            {smallText.map((text, index) => (
+              <motion.p
+                key={index}
+                variants={smallTextVariants}
+                initial="off"
+                whileInView="on"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, ease: 'backOut', delay: 0.2 + index * 0.08 }}
+              >
+                {text}
+              </motion.p>
+            ))}
           </div>
         </div>
       </div>
