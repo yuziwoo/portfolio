@@ -25,9 +25,8 @@ const BannerWrapper = styled.article`
   width: 100%;
   padding: 0 10rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (max-width: 860px) {
     padding: 0 2rem;

@@ -71,33 +71,48 @@ const IntroText = () => {
   return (
     <article>
       <SmallText className="smallText">
-        <p>
+        <motion.p
+          initial={{ opacity: 0, x: -15 }}
+          animate={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{duration: 1.2, ease: 'backInOut'}}
+        >
           PORTFOLIO 2024
           <br />
           FRONTEND DEVELOPER
           <br />& PUBLISHER & DESIGNER
           <br />
           DOING THIS SINCE 2020
-        </p>
-        <p>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 15 }}
+          animate={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{duration: 1.2, ease: 'backInOut'}}
+        >
           I LOVE THE CHALLENGE OF CREATING SOMETHING NEW,
           <br /> THE SATISFACTION OF SEEING MY VISION COME TO LIFE,
           <br /> THE JOY OF KNOWING THAT MY WORK IS MAKING A DIFFERENCE.
-        </p>
-        <p>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -15 }}
+          animate={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{duration: 1.2, ease: 'backInOut'}}
+        >
           I KNOW EXACTLY WHAT YOU WANT
           <br />
           IT'S LIKE...
-        </p>
+        </motion.p>
       </SmallText>
       <BigText>
         {titleText.map((text, idx) => (
           <motion.h1
             key={idx}
             initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5, delay: 0.1 + idx * 0.2, ease: 'backInOut' }}
+            transition={{ duration: 1.2, delay: 0.5 + idx * 0.15, ease: 'backInOut' }}
           >
             {text}
           </motion.h1>
