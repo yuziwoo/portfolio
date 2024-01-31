@@ -3,6 +3,7 @@ import IntroText from './IntroText/IntroText';
 import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
 import IntroAppleBanner from './IntroAppleBanner/IntroAppleBanner';
 import IntroWomanBanner from './IntroWomanBanner/IntroWomanBanner';
+import IntroBackground from './IntroBackground/IntroBackground';
 
 const MainSection = styled.section`
   width: 100%;
@@ -22,6 +23,8 @@ const MainSection = styled.section`
 `;
 
 const BannerWrapper = styled.article`
+  position: relative;
+  --size-background: 60rem;
   width: 100%;
   padding: 0 10rem;
   display: flex;
@@ -30,6 +33,12 @@ const BannerWrapper = styled.article`
 
   @media screen and (max-width: 860px) {
     padding: 0 2rem;
+    & .background-parallax {
+      display: none;
+    }
+    & .background-parallax p {
+      animation: none !important;
+    }
   }
 
   @media screen and (max-width: 430px) {
@@ -42,6 +51,7 @@ const Introduce = () => {
     <MainSection className="main-section intro">
       <IntroText />
       <BannerWrapper>
+        <IntroBackground />
         <IntroSwiperBanner />
         <IntroAppleBanner />
         <IntroWomanBanner />
