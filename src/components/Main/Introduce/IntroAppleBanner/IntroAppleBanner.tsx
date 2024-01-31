@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { STYLE } from '../../../../constants/style';
 
 const Banner = styled.section`
-  --size-heading: 6.25vw;
+  --size-heading: 12rem;
 
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   position: relative;
 
@@ -26,16 +26,13 @@ const Banner = styled.section`
     padding: 0 0 6.4% 4.66%;
   }
 
-  @media screen and (max-width: 1040px) {
-    & {
-      --size-heading: 11vw;
-    }
+  @media screen and (max-width: 860px) {
+    --size-heading: 11.4vw;
+    width: 100%;
   }
 
-  @media screen and (max-width: 860px) {
-    & {
-      --size-heading: 13.95348837vw;
-    }
+  @media screen and (max-width: 430px) {
+    --size-heading: 5.8rem;
   }
 `;
 

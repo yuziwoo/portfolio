@@ -3,7 +3,7 @@ const MainPageSkeleton = () => {
     <div
       style={{
         minHeight: '100vh',
-        background: 'var(--color-background)',
+        background: '#6D31CE',
       }}
     ></div>
   );
