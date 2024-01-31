@@ -72,6 +72,7 @@ const IntroWomanBanner = () => {
             src={`${imgSrc}object${num}.png`}
             alt="오브젝트 이미지"
             style={{ animationDelay: `${num * 0.3}s` }}
+            key={num}
           />
         ))}
       </div>
