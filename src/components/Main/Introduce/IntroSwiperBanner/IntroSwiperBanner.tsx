@@ -66,7 +66,7 @@ const IntroSwiperBanner = () => {
                 initial="off"
                 whileInView="on"
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, ease: 'backOut', delay: 0.2 + index * 0.08 }}
+                transition={{ duration: 0.7, ease: 'backInOut', delay: 0.2 + index * 0.08 }}
               >
                 {text}
               </motion.p>

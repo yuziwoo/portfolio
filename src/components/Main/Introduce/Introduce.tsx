@@ -9,17 +9,33 @@ const MainSection = styled.section`
   background-image: url('../img/section1/background.jpg');
   background-size: 100% auto;
   background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
   padding-top: 140px;
   @media screen and (max-width: 860px) {
-    padding-top: 120px
+    padding-top: 120px;
   }
   @media screen and (max-width: 430px) {
-    padding-top: 80px
+    padding-top: 80px;
   }
 `;
 
 const BannerWrapper = styled.article`
+  width: 100%;
+  padding: 0 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media screen and (max-width: 860px) {
+    padding: 0 2rem;
+  }
+
+  @media screen and (max-width: 430px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Introduce = () => {

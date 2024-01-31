@@ -1,7 +1,7 @@
 .intro-swiper-banner {
-  --size-parallax: 6.25vw;
+  --size-parallax: 12rem;
 
-  width: 100%;
+  width: 50%;
   position: relative;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .intro-swiper-banner .parallax {
-  top: 3.7383%;
+  top: 4rem;
 }
 
 .intro-swiper-banner .decoration {
@@ -49,18 +49,18 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 1.041666vw;
+  padding: 2rem;
 }
 
 .intro-swiper-banner .decoration .text .text-big {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-bottom: 2.2vw;
+  padding-bottom: 3rem;
 }
 
 .intro-swiper-banner .decoration .text .text-big h1 {
-  font-size: 6.25vw;
+  font-size: 12rem;
   font-weight: 700;
   font-style: italic;
   position: relative;
@@ -69,7 +69,7 @@
 }
 
 .intro-swiper-banner .decoration .text .text-big h1:nth-child(1) {
-  padding-right: 1.8vw;
+  padding-right: 3rem;
   line-height: 1;
 }
 
@@ -150,50 +150,58 @@
 }
 
 .intro-swiper-banner .decoration .text .text-small p {
-  font-size: 0.9vw;
+  font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 700;
   font-style: italic;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 860px) {
   .intro-swiper-banner {
-    --size-parallax: 11vw;
+    --size-parallax: 11.4rem;
+    width: 100%;
+  }
+  .intro-swiper-banner .parallax {
+    top: 3.6rem;
   }
   .intro-swiper-banner .decoration .text {
-    padding: 2vw;
+    padding: 1.8rem;
   }
   .intro-swiper-banner .decoration .text .text-big {
-    padding-bottom: 4.4vw;
+    padding-bottom: 2.7rem;
   }
   .intro-swiper-banner .decoration .text .text-big h1 {
-    font-size: 11vw;
+    font-size: 11.4rem;
   }
   .intro-swiper-banner .decoration .text .text-big h1:nth-child(1) {
-    padding-right: 3.6vw;
+    padding-right: 2.7rem;
   }
   .intro-swiper-banner .decoration .text .text-small p {
-    font-size: 1.8vw;
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 430px) {
   .intro-swiper-banner {
-    --size-parallax: 13.95348837vw;
+    --size-parallax: 5.8rem;
+    width: 100%;
+  }
+  .intro-swiper-banner .parallax {
+    top: 2rem;
   }
   .intro-swiper-banner .decoration .text {
-    padding: 2.32558vw;
+    padding: 0.9rem;
   }
   .intro-swiper-banner .decoration .text .text-big {
-    padding-bottom: 5.52325vw;
+    padding-bottom: 1.3rem;
   }
   .intro-swiper-banner .decoration .text .text-big h1 {
-    font-size: 13.95348837vw;
+    font-size: 5.8rem;
   }
   .intro-swiper-banner .decoration .text .text-big h1:nth-child(1) {
-    padding-right: 3.6vw;
+    padding-right: 1.3rem;
   }
   .intro-swiper-banner .decoration .text .text-small p {
-    font-size: 1.86vw;
+    font-size: 1rem;
   }
 }
