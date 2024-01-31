@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import IntroText from './IntroText/IntroText';
 import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
 import IntroAppleBanner from './IntroAppleBanner/IntroAppleBanner';
+import IntroWomanBanner from './IntroWomanBanner/IntroWomanBanner';
 
 const MainSection = styled.section`
   width: 100%;
@@ -11,14 +12,12 @@ const MainSection = styled.section`
   justify-content: space-between;
   align-items: flex-start;
   padding: 16rem 10rem 20rem;
-  background-image: url('../img/section1/background.jpg');
-  background-size: cover;
 
   @media screen and (max-width: 1600px) {
     padding: 16rem 4rem 20rem;
   }
   @media screen and (max-width: 1140px) {
-    padding: 8rem 3rem 16rem
+    padding: 8rem 3rem 16rem;
   }
   @media screen and (max-width: 1040px) {
     flex-direction: column;
@@ -49,6 +48,7 @@ const Introduce = () => {
       <BannerWrapper>
         <IntroSwiperBanner />
         <IntroAppleBanner />
+        <IntroWomanBanner />
       </BannerWrapper>
     </MainSection>
   );

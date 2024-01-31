@@ -16,6 +16,10 @@ const TextBlock = styled.div`
 const Paragraph = styled.p`
   font-size: var(--font-size-2);
   padding-top: 1rem;
+
+  @media screen and (max-width: 860px) {
+    font-weight: 500;
+  }
 `;
 
 const Article = styled.article`
