@@ -21,7 +21,7 @@ const MainSection = styled.section`
     padding: 8rem 3rem 16rem
   }
   @media screen and (max-width: 1040px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   @media screen and (max-width: 860px) {
     padding: 0rem 0rem 16rem;
@@ -35,6 +35,10 @@ const BannerWrapper = styled.article`
     width: 100%;
     max-width: 860px;
     margin: auto;
+    padding: 8rem 2.325581vw 0;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 2rem 2.325581vw 0;
   }
 `;
 

@@ -31,9 +31,15 @@ const Article = styled.article`
     position: relative;
     top: 0;
     padding-top: 6rem;
+    width: 100%;
+    max-width: 860px;
+    margin: auto;
   }
   @media screen and (max-width: 860px) {
     padding: 6rem 2.325581vw;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 10rem 2.325581vw 10rem;
   }
 `;
 
@@ -56,8 +62,9 @@ const IntroText = () => {
         <motion.h1
           variants={HeadingVariants}
           initial="initial"
-          whileInView="animate"
+          animate="animate"
           whileHover="hover"
+          viewport={{ once: true }}
           transition={{
             duration: 0,
             ease: 'anticipate',
