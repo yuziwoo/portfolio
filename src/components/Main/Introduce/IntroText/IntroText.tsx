@@ -16,6 +16,10 @@ const TextBlock = styled.div`
 const Paragraph = styled.p`
   font-size: var(--font-size-2);
   padding-top: 1rem;
+
+  @media screen and (max-width: 860px) {
+    font-weight: 500;
+  }
 `;
 
 const Article = styled.article`
@@ -31,9 +35,15 @@ const Article = styled.article`
     position: relative;
     top: 0;
     padding-top: 6rem;
+    width: 100%;
+    max-width: 860px;
+    margin: auto;
   }
   @media screen and (max-width: 860px) {
     padding: 6rem 2.325581vw;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 10rem 2.325581vw 10rem;
   }
 `;
 
@@ -51,12 +61,14 @@ const IntroText = () => {
         drag
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
         dragTransition={{ bounceStiffness: 500, bounceDamping: 20 }}
+        viewport={{ once: true }}
       >
         <motion.h1
           variants={HeadingVariants}
           initial="initial"
-          whileInView="animate"
+          animate="animate"
           whileHover="hover"
+          viewport={{ once: true }}
           transition={{
             duration: 0,
             ease: 'anticipate',
