@@ -12,6 +12,9 @@ const MainSection = styled.section`
   justify-content: space-between;
   align-items: flex-start;
   padding: 16rem 10rem 20rem;
+  background-image: url('../img/section1/background.jpg');
+  background-size: 100% auto;
+  background-position: top center;
 
   @media screen and (max-width: 1600px) {
     padding: 16rem 4rem 20rem;
