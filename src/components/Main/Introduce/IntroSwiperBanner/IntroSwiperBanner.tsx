@@ -28,8 +28,8 @@ const IntroSwiperBanner = () => {
         slidesPerView={1}
         effect="fade"
         loop={true}
-        autoplay={{ delay: 1800 }}
-        speed={1200}
+        autoplay={{ delay: 800 }}
+        speed={1000}
         modules={[EffectFade, Autoplay]}
       >
         {imgs.map((num) => (
