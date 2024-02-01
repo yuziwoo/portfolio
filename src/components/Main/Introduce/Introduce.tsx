@@ -3,44 +3,47 @@ import IntroText from './IntroText/IntroText';
 import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
 import IntroAppleBanner from './IntroAppleBanner/IntroAppleBanner';
 import IntroWomanBanner from './IntroWomanBanner/IntroWomanBanner';
+import IntroBackground from './IntroBackground/IntroBackground';
+import IntroSpaceBanner from './IntroSpaceBanner/IntroSpaceBanner';
 
 const MainSection = styled.section`
   width: 100%;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 16rem 10rem 20rem;
   background-image: url('../img/section1/background.jpg');
   background-size: 100% auto;
   background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
-  @media screen and (max-width: 1600px) {
-    padding: 16rem 4rem 20rem;
-  }
-  @media screen and (max-width: 1140px) {
-    padding: 8rem 3rem 16rem;
-  }
-  @media screen and (max-width: 1040px) {
-    flex-direction: column;
-  }
+  padding-top: 140px;
   @media screen and (max-width: 860px) {
-    padding: 0rem 0rem 16rem;
+    padding-top: 120px;
+  }
+  @media screen and (max-width: 430px) {
+    padding-top: 80px;
   }
 `;
 
 const BannerWrapper = styled.article`
-  width: 50%;
+  position: relative;
+  --size-background: 60rem;
+  width: 100%;
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media screen and (max-width: 1040px) {
-    width: 100%;
-    max-width: 860px;
-    margin: auto;
-    padding: 8rem 2.325581vw 0;
+  @media screen and (max-width: 860px) {
+    padding: 0 2rem;
+    & .background-parallax {
+      display: none;
+    }
+    & .background-parallax p {
+      animation: none !important;
+    }
   }
-  @media screen and (max-width: 500px) {
-    padding: 2rem 2.325581vw 0;
+
+  @media screen and (max-width: 430px) {
+    padding: 0 1rem;
   }
 `;
 
@@ -49,9 +52,11 @@ const Introduce = () => {
     <MainSection className="main-section intro">
       <IntroText />
       <BannerWrapper>
+        <IntroBackground />
         <IntroSwiperBanner />
         <IntroAppleBanner />
         <IntroWomanBanner />
+        <IntroSpaceBanner />
       </BannerWrapper>
     </MainSection>
   );

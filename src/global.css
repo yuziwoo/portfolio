@@ -16,10 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
   flex-shrink: 0;
-  -webkit-user-drag: none;
-
   /* device reset */
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: transparent;
@@ -112,4 +109,14 @@ q:after,
 q:before {
   content: '';
   content: none;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+*::selection {
+  background-color: #183646;
+  color: white;
 }

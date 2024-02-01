@@ -5,7 +5,8 @@ import TextParallax from '../../../common/TextParallax/TextParallax';
 
 const Banner = styled.section`
   position: relative;
-  --size-parallax: 6.25vw;
+  --size-parallax: 12rem;
+  width: 50%;
 
   & .layer {
     position: absolute;
@@ -41,7 +42,12 @@ const Banner = styled.section`
   }
 
   @media screen and (max-width: 860px) {
-    --size-parallax: 13.95348837vw;
+    --size-parallax: 11.4rem;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 430px) {
+    --size-parallax: 5.8rem;
   }
 `;
 
@@ -55,7 +61,7 @@ const IntroWomanBanner = () => {
         slidesPerView={1}
         effect="fade"
         loop={true}
-        autoplay={{ delay: 1200 }}
+        autoplay={{ delay: 1000 }}
         speed={600}
         modules={[Autoplay, EffectFade]}
       >

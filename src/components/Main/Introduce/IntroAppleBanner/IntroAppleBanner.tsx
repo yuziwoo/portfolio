@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { STYLE } from '../../../../constants/style';
 
 const Banner = styled.section`
-  --size-heading: 6.25vw;
+  --size-heading: 12rem;
 
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   position: relative;
 
@@ -26,16 +26,13 @@ const Banner = styled.section`
     padding: 0 0 6.4% 4.66%;
   }
 
-  @media screen and (max-width: 1040px) {
-    & {
-      --size-heading: 11vw;
-    }
+  @media screen and (max-width: 860px) {
+    --size-heading: 11.4rem;
+    width: 100%;
   }
 
-  @media screen and (max-width: 860px) {
-    & {
-      --size-heading: 13.95348837vw;
-    }
+  @media screen and (max-width: 430px) {
+    --size-heading: 5.8rem;
   }
 `;
 
@@ -46,14 +43,14 @@ const IntroAppleBanner = () => {
         initial={{ clipPath: 'inset(0 100% 0 0)' }}
         whileInView={{ clipPath: 'inset(0)' }}
         style={{ overflow: 'hidden', position: 'relative' }}
-        transition={{ ease: STYLE.easeInout, duration: 0.75, delay: 0.4 }}
+        transition={{ ease: STYLE.easeInout, duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <motion.div
           initial={{ scale: 1.7 }}
           whileInView={{ scale: 1 }}
           style={{ transformOrigin: 'top center' }}
-          transition={{ ease: STYLE.easeIn, duration: 1.3, delay: 0.2 }}
+          transition={{ ease: STYLE.easeIn, duration: 1.1, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <img src="../img/section1/main-banner-2.jpg" alt="배너 이미지" />
@@ -90,7 +87,7 @@ const IntroAppleBanner = () => {
             transition={{
               ease: STYLE.easeInout,
               duration: 1.2,
-              delay: 0.6,
+              delay: 0.3,
             }}
             viewport={{ once: true }}
             style={{

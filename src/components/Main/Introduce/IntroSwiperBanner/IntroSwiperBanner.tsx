@@ -28,8 +28,8 @@ const IntroSwiperBanner = () => {
         slidesPerView={1}
         effect="fade"
         loop={true}
-        autoplay={{ delay: 1800 }}
-        speed={1200}
+        autoplay={{ delay: 800 }}
+        speed={1000}
         modules={[EffectFade, Autoplay]}
       >
         {imgs.map((num) => (
@@ -66,7 +66,7 @@ const IntroSwiperBanner = () => {
                 initial="off"
                 whileInView="on"
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, ease: 'backOut', delay: 0.2 + index * 0.08 }}
+                transition={{ duration: 0.7, ease: 'backInOut', delay: 0.2 + index * 0.08 }}
               >
                 {text}
               </motion.p>
