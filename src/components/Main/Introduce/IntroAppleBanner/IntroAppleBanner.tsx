@@ -27,7 +27,7 @@ const Banner = styled.section`
   }
 
   @media screen and (max-width: 860px) {
-    --size-heading: 11.4vw;
+    --size-heading: 11.4rem;
     width: 100%;
   }
 

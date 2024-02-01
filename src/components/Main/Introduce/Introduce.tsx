@@ -4,6 +4,7 @@ import IntroSwiperBanner from './IntroSwiperBanner/IntroSwiperBanner';
 import IntroAppleBanner from './IntroAppleBanner/IntroAppleBanner';
 import IntroWomanBanner from './IntroWomanBanner/IntroWomanBanner';
 import IntroBackground from './IntroBackground/IntroBackground';
+import IntroSpaceBanner from './IntroSpaceBanner/IntroSpaceBanner';
 
 const MainSection = styled.section`
   width: 100%;
@@ -55,6 +56,7 @@ const Introduce = () => {
         <IntroSwiperBanner />
         <IntroAppleBanner />
         <IntroWomanBanner />
+        <IntroSpaceBanner />
       </BannerWrapper>
     </MainSection>
   );
