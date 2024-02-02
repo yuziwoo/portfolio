@@ -98,7 +98,7 @@ const AboutMeHeader = () => {
           <motion.h1
             initial={{ y: '100%' }}
             whileInView={{ y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
             viewport={{ once: true, amount: 'some' }}
           >
             LET'S CHECK
@@ -109,7 +109,7 @@ const AboutMeHeader = () => {
             className="gradient"
             initial={{ y: '100%' }}
             whileInView={{ y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
             viewport={{ once: true, amount: 'some' }}
           >
             ABOUT ME

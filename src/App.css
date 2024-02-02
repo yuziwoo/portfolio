@@ -15,18 +15,24 @@
   --ease-inout: cubic-bezier(0.75, 0, 0.15, 1);
 
   --heading-1: 26rem;
+  --heading-2: 14rem;
+  --heading-2-fixed: 140px;
 }
 
 @media screen and (max-width: 860px) {
   :root {
     font-size: 1.16279vw;
     --heading-1: 11.4rem;
+    --heading-2: 10rem;
+    --heading-2-fixed: 10rem;
   }
 }
 @media screen and (max-width: 430px) {
   :root {
     font-size: 2.3255814vw;
     --heading-1: 5.8rem;
+    --heading-2: 6rem;
+    --heading-2-fixed: 6rem;
   }
 }
 
