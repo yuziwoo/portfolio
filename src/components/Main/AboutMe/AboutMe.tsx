@@ -1,5 +1,6 @@
 import AboutMeHeader from './AboutMeHeader/AboutMeHeader';
 import AboutMeHistory from './AboutMeHistory/AboutMeHistory';
+import AboutMeMessage from './AboutMeMessage/AboutMeMessage';
 import AboutMeSkill from './AboutMeSkill/AboutMeSkill';
 
 const AboutMe = () => {
@@ -8,6 +9,7 @@ const AboutMe = () => {
       <AboutMeHeader />
       <AboutMeSkill />
       <AboutMeHistory />
+      <AboutMeMessage />
     </section>
   );
 };
