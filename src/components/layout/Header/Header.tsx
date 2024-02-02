@@ -60,10 +60,7 @@ const Header = () => {
       <HeaderProgress />
       <nav>
         <p className="logo">JIWOO YU</p>
-        <CustomButton>
-          <span className="line"></span>
-          <span className="line"></span>
-        </CustomButton>
+        <p className="logo">PORTFOLIO</p>
       </nav>
     </StyledHeader>
   );
