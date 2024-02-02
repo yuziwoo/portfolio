@@ -19,6 +19,12 @@
   --heading-2-fixed: 140px;
 }
 
+@media screen and (max-width: 1280px) {
+  :root {
+    --heading-2: 20rem;
+  }
+}
+
 @media screen and (max-width: 860px) {
   :root {
     font-size: 1.16279vw;
