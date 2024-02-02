@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Variants, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const SmallText = styled.div`
   width: 100%;

@@ -30,15 +30,12 @@ const MouseCursor = () => {
     });
   }, []);
 
-  const handleRemovePointList = useCallback(
-    useThrottle({
-      func: () => {
-        setPointList([]);
-      },
-      delay: 100,
-    }),
-    []
-  );
+  const handleRemovePointList = useThrottle({
+    func: () => {
+      setPointList([]);
+    },
+    delay: 100,
+  });
 
   useEffect(() => {
     recordPoint({ x, y });

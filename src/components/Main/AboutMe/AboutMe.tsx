@@ -6,7 +6,7 @@ import AboutMeMan from './AboutMeMan/AboutMeMan';
 
 const AboutMe = () => {
   return (
-    <section>
+    <section style={{ position: 'relative', zIndex: '1' }}>
       <AboutMeHeader />
       <AboutMeSkill />
       <AboutMeHistory />
