@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Suspense } from 'react';
-import { ROUTE_PATH } from '../shared/constants/path';
+import { ROUTE_PATH } from '../constants/path';
 import * as Lazy from './lazy';
 
 import App from '../App';

@@ -1,0 +1,73 @@
+:root {
+  font-size: 0.52083333vw;
+
+  --z-index-header: 300;
+  --z-index-mousecursor: 500;
+
+  --color-background: #0f172b;
+  --color-white: white;
+  --color-red: #cc0d18;
+  --color-grey: #B7B7B7;
+
+  /* --gradient-main:  */
+
+  --ease-in: cubic-bezier(0.16, 0.84, 0.44, 1);
+  --ease-out: cubic-bezier(0.23, 0.98, 0.32, 1);
+  --ease-inout: cubic-bezier(0.75, 0, 0.15, 1);
+
+  --heading-1: 26rem;
+  --heading-2: 14rem;
+  --heading-2-fixed: 140px;
+}
+
+@media screen and (max-width: 1280px) {
+  :root {
+    --heading-2: 20rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  :root {
+    font-size: 1.16279vw;
+    --heading-1: 11.4rem;
+    --heading-2: 10rem;
+    --heading-2-fixed: 10rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  :root {
+    font-size: 2.3255814vw;
+    --heading-1: 5.8rem;
+    --heading-2: 6rem;
+    --heading-2-fixed: 6rem;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+* {
+  color: var(--color-white);
+}
+
+@keyframes hue-rotate {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
