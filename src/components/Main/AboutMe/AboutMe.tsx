@@ -2,6 +2,7 @@ import AboutMeHeader from './AboutMeHeader/AboutMeHeader';
 import AboutMeHistory from './AboutMeHistory/AboutMeHistory';
 import AboutMeMessage from './AboutMeMessage/AboutMeMessage';
 import AboutMeSkill from './AboutMeSkill/AboutMeSkill';
+import AboutMeMan from './AboutMeMan/AboutMeMan';
 
 const AboutMe = () => {
   return (
@@ -10,6 +11,7 @@ const AboutMe = () => {
       <AboutMeSkill />
       <AboutMeHistory />
       <AboutMeMessage />
+      <AboutMeMan />
     </section>
   );
 };
