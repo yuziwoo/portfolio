@@ -17,6 +17,8 @@ const CustomAnchor = ({ children, href, className, style }: CustomAnchorProps) =
       href={href}
       className={`${className ? className : ''}${isHover ? ' hover' : ''}`}
       style={style ? style : {}}
+      target="_blank"
+      rel='noreferrer'
       onPointerEnter={() => {
         toggleHovering(true);
         setIsHover(true);

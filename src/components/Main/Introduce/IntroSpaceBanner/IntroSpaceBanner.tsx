@@ -1,15 +1,6 @@
 import { motion } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import styled, { keyframes } from 'styled-components';
-
-const animationSpaceMan = keyframes`
-from{
-  transform: translateY(2%) rotate(3deg);
-}
-to {
-  transform: translateY(2%) rotate(-3deg);
-}
-`;
+import styled from 'styled-components';
 
 const Banner = styled.div`
   width: 100%;
@@ -96,6 +87,7 @@ const IntroSpaceBanner = () => {
       const observer = new IntersectionObserver(handleSpaceManZoom, { threshold });
       observer.observe(ref.current);
     }
+    // eslint-disable-next-line
   }, [ref]);
 
   return (

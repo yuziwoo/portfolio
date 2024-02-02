@@ -34,6 +34,7 @@ const AboutMeMan = () => {
       const observer = new IntersectionObserver(handleZoom, { threshold });
       observer.observe(ref.current);
     }
+    // eslint-disable-next-line
   }, [ref]);
 
   return (
