@@ -8,25 +8,25 @@
   --color-white: white;
   --color-red: #cc0d18;
 
+  /* --gradient-main:  */
+
   --ease-in: cubic-bezier(0.16, 0.84, 0.44, 1);
   --ease-out: cubic-bezier(0.23, 0.98, 0.32, 1);
   --ease-inout: cubic-bezier(0.75, 0, 0.15, 1);
+
+  --heading-1: 26rem;
 }
 
 @media screen and (max-width: 860px) {
   :root {
     font-size: 1.16279vw;
+    --heading-1: 11.4rem;
   }
 }
 @media screen and (max-width: 430px) {
   :root {
     font-size: 2.3255814vw;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  :root {
-    font-size: 0.5208333vw;
+    --heading-1: 5.8rem;
   }
 }
 

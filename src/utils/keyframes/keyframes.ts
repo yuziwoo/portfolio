@@ -1,70 +1,33 @@
-.text-parallax {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
+import { keyframes } from 'styled-components';
 
-.text-parallax p {
-  position: absolute;
-  text-wrap: nowrap;
-  width: max-content;
-  left: 0;
-  top: 0;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-}
-
-.text-parallax p:nth-child(1) {
-  position: relative;
-  opacity: 0;
-}
-
-.text-parallax p:nth-child(2) {
-  animation-name: text-parallax-l-1;
-}
-
-.text-parallax p:nth-child(3) {
-  animation-name: text-parallax-l-2;
-}
-
-.text-parallax p:nth-child(4) {
-  animation-name: text-parallax-l-3;
-}
-
-.text-parallax p:nth-child(5) {
-  animation-name: text-parallax-l-4;
-}
-
-@keyframes text-parallax-l-1 {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  25% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
-  30% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  70% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  75% {
-    opacity: 1;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes text-parallax-l-2 {
-  from {
+export const keyframeParallax = {
+  left1: keyframes`
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    25% {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+    30% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    70% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    75% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `,
+  left2: keyframes`from {
     opacity: 1;
     transform: translateX(100%);
   }
@@ -87,11 +50,8 @@
   to {
     opacity: 1;
     transform: translateX(100%);
-  }
-}
-
-@keyframes text-parallax-l-3 {
-  from {
+  }`,
+  left3: keyframes`from {
     opacity: 1;
     transform: translateX(100%);
   }
@@ -118,11 +78,8 @@
   to {
     opacity: 1;
     transform: translateX(100%);
-  }
-}
-
-@keyframes text-parallax-l-4 {
-  from {
+  }`,
+  left4: keyframes`from {
     opacity: 0;
     transform: translateX(-100%);
   }
@@ -137,32 +94,8 @@
   100% {
     opacity: 1;
     transform: translateX(-100%);
-  }
-}
-
-.text-parallax[class*='right'] p {
-  right: 0;
-  left: auto;
-}
-
-.text-parallax[class*='right'] p:nth-child(2) {
-  animation-name: text-parallax-r-1;
-}
-
-.text-parallax[class*='right'] p:nth-child(3) {
-  animation-name: text-parallax-r-2;
-}
-
-.text-parallax[class*='right'] p:nth-child(4) {
-  animation-name: text-parallax-r-3;
-}
-
-.text-parallax[class*='right'] p:nth-child(5) {
-  animation-name: text-parallax-r-4;
-}
-
-@keyframes text-parallax-r-1 {
-  from {
+  }`,
+  right1: keyframes`from {
     opacity: 1;
     transform: translateX(0);
   }
@@ -185,11 +118,8 @@
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes text-parallax-r-2 {
-  from {
+  }`,
+  right2: keyframes`from {
     opacity: 1;
     transform: translateX(-100%);
   }
@@ -212,11 +142,8 @@
   to {
     opacity: 1;
     transform: translateX(-100%);
-  }
-}
-
-@keyframes text-parallax-r-3 {
-  from {
+  }`,
+  right3: keyframes`from {
     opacity: 1;
     transform: translateX(-100%);
   }
@@ -243,11 +170,8 @@
   to {
     opacity: 1;
     transform: translateX(-100%);
-  }
-}
-
-@keyframes text-parallax-r-4 {
-  from {
+  }`,
+  right4: keyframes`from {
     opacity: 0;
     transform: translateX(100%);
   }
@@ -262,5 +186,5 @@
   100% {
     opacity: 1;
     transform: translateX(100%);
-  }
-}
+  }`,
+};
