@@ -139,7 +139,7 @@ const Contact = () => {
                 <IconGithub color="white" />
                 <p>GITHUB</p>
               </CustomAnchor>
-              <CustomAnchor href="https://github.com/yuziwoo">
+              <CustomAnchor href="https://www.acmicpc.net/user/yuziwoo">
                 <IconBaekjoon color="white" />
                 <p>BEAKJOON</p>
               </CustomAnchor>
