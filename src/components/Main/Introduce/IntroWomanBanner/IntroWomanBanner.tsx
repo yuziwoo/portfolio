@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import TextParallax from '../../../common/TextParallax/TextParallax';
+import { motion } from 'framer-motion';
+import { STYLE } from '../../../../constants/style';
 
 const Banner = styled.section`
   position: relative;
@@ -83,7 +85,13 @@ const IntroWomanBanner = () => {
         ))}
       </div>
 
-      <div className="layer layer-parallax">
+      <motion.div
+        className="layer layer-parallax"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 'some' }}
+        transition={{ ease: STYLE.easeInout, duration: 0.6 }}
+      >
         <TextParallax
           text="CHALLENGE OF CREATING"
           textStyle={{
@@ -107,7 +115,7 @@ const IntroWomanBanner = () => {
           speed="30s"
           dir="right"
         />
-      </div>
+      </motion.div>
     </Banner>
   );
 };

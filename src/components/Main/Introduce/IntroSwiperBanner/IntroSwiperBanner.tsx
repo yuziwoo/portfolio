@@ -23,7 +23,7 @@ const IntroSwiperBanner = () => {
   const smallText = ['EXTREME', 'EFFICIENCY', 'WEBSITES'];
 
   return (
-    <section className="intro-swiper-banner">
+    <div className="intro-swiper-banner">
       <Swiper
         slidesPerView={1}
         effect="fade"
@@ -75,7 +75,7 @@ const IntroSwiperBanner = () => {
         </div>
       </div>
       <img className="layer text-img" src={`${imgSrc}text.png`} alt="고정된 배너 이미지" />
-    </section>
+    </div>
   );
 };
 

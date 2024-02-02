@@ -43,15 +43,15 @@ const IntroAppleBanner = () => {
         initial={{ clipPath: 'inset(0 100% 0 0)' }}
         whileInView={{ clipPath: 'inset(0)' }}
         style={{ overflow: 'hidden', position: 'relative' }}
-        transition={{ ease: STYLE.easeInout, duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        transition={{ ease: STYLE.easeInout, duration: 0.6 }}
+        viewport={{ once: true, amount: 'some' }}
       >
         <motion.div
           initial={{ scale: 1.7 }}
           whileInView={{ scale: 1 }}
           style={{ transformOrigin: 'top center' }}
           transition={{ ease: STYLE.easeIn, duration: 1.1, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 'some' }}
         >
           <img src="../img/section1/main-banner-2.jpg" alt="배너 이미지" />
         </motion.div>
@@ -74,10 +74,9 @@ const IntroAppleBanner = () => {
               opacity: {
                 ease: STYLE.easeIn,
                 duration: 0.8,
-                delay: 0.5,
               },
             }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 'some' }}
           >
             <img src="../img/section1/main-banner-2-text.png" alt="배너 데코 이미지" />
           </motion.div>
@@ -87,9 +86,8 @@ const IntroAppleBanner = () => {
             transition={{
               ease: STYLE.easeInout,
               duration: 1.2,
-              delay: 0.3,
             }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 'some' }}
             style={{
               color: 'var(--color-red)',
               writingMode: 'vertical-lr',
