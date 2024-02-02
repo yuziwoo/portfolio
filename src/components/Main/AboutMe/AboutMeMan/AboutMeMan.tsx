@@ -17,16 +17,20 @@ const threshold = Array.from({ length: 100 }, (_, idx) => idx * 0.01);
 
 const AboutMeMan = () => {
   const ref = useRef<null | HTMLDivElement>(null);
+  const [firstShot, setFirstShot] = useState(true);
   const [ratio, setRatio] = useState(0);
 
   const handleZoom = useCallback((entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry) => {
-      setRatio(Math.floor(entry.intersectionRatio * 100) * 0.01);
+      if (entry.intersectionRect.top !== 0) {
+        setRatio(Math.floor(entry.intersectionRatio * 100) * 0.01);
+      }
     });
   }, []);
 
   useEffect(() => {
-    if (ref.current !== null) {
+    if (ref.current !== null && firstShot) {
+      setFirstShot(false);
       const observer = new IntersectionObserver(handleZoom, { threshold });
       observer.observe(ref.current);
     }
