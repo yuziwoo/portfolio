@@ -56,7 +56,7 @@ const MouseCursor = () => {
   return (
     <div id="mouse-cursor" ref={ref} style={{ display: `${mouseCursorSwitch ? 'block' : 'none'}` }}>
       <svg>
-        <polyline points={pointList.join(' ')} style={{ fill: 'transparent', stroke: '#CC0D18' }} />
+        <polyline points={pointList.join(' ')} style={{ fill: 'transparent', stroke: 'white' }} />
         <motion.circle
           className="circle-small"
           animate={{ cx: x === 0 ? -100 : x, cy: y === 0 ? -100 : y }}
