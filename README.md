@@ -1,15 +1,14 @@
-# 프로젝트 이름
+# 웹 포트폴리오
 
-- 새로운 <strong style="color:yellow">프로젝트 이름</strong>에 오신걸 환영합니다!
-- [프로젝트 노션 방문하기 👉](https://example.com)
+- 시선을 사로잡는 <strong style="color:yellow">웹 포트폴리오</strong>에 오신걸 환영합니다!
+- [포트폴리오 방문하기 👉](https://www.yuziwoo.com)
 
 ## Develop
 
 - date
 - language
   - Main : React, TypeScript
-  - Library : React Query
-  - API : 
+  - Library : Swiper, framer-motion, React-router, styled-component
 
 ## Commit Convention
 ```
