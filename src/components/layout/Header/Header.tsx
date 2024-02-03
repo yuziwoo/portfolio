@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 53px 4rem 0;
+    padding: 53px 6rem 0;
   }
 
   & nav .logo {
@@ -40,13 +40,13 @@ const StyledHeader = styled.header`
 
   @media screen and (max-width: 860px) {
     & nav {
-      padding: 30px 4rem 0;
+      padding: 30px 2rem 0;
     }
   }
 
   @media screen and (max-width: 430px) {
     & nav {
-      padding: 20px 2rem 0;
+      padding: 20px 1rem 0;
     }
     & nav .logo {
       font-size: 16px;
